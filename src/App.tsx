@@ -2,6 +2,8 @@ import { Product } from "./components/Product/Product";
 import { useProducts } from "./hooks/useProducts";
 import { Loader } from "./components/Loader/Loader";
 import { ErrorMessage } from "./components/ErrorMessage/ErrorMessage";
+import { ModalWindow } from "./components/ModalWindow/ModalWindow";
+import { CreateProduct } from "./components/CreateProduct/CreateProduct";
 
 function App() {
     const { loading, errorLoading, loadedProducts } = useProducts();
@@ -15,6 +17,9 @@ function App() {
                     <Product key={product.id} product={product} />
                 ))
             }
+            <ModalWindow title="Create new product">
+                <CreateProduct />
+            </ModalWindow>
         </div>
     );
 }
