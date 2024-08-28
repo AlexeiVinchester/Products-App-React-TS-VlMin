@@ -28,7 +28,6 @@ const CreateProduct = ({onCreate}: ICreateProductProps) => {
                 rate: 40,
                 coint: 10
             }
-            
         });
 
         onCreate(response.data);
