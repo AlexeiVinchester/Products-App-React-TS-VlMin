@@ -30,3 +30,4 @@ const ModalState = ({children}: IModalStateProps) => {
 }
 
 export { ModalState, ModalContext};
+
